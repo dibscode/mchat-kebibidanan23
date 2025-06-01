@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="M-CHAT Universitas Nurul Jadid">
     <meta property="og:description" content="Deteksi Autisme Dini Bayi - Universitas Nurul Jadid">
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Logo-UNUJA.png/500px-Logo-UNUJA.png">
@@ -28,7 +29,8 @@
             <!-- Logo dan Judul -->
             <div class="flex items-center gap-2">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Logo-UNUJA.png/500px-Logo-UNUJA.png" class="w-10">
-                <a href="#" class="text-2xl font-extrabold tracking-tight leading-none text-blue-950">M-CHAT Universitas Nurul Jadid</a>
+                <a href="#" class="text-2xl font-extrabold tracking-tight leading-none text-blue-950 block md:hidden">M-CHAT UNUJA</a>
+                <a href="#" class="text-2xl font-extrabold tracking-tight leading-none text-blue-950 hidden md:block">M-CHAT Universitas Nurul Jadid</a>
             </div>
 
             <!-- Burger Button (Mobile) -->
@@ -153,8 +155,8 @@
 
 
             <!-- Baby Data Table -->
-            <div class="overflow-x-auto w-full">
-                <table id="selection-table " class="min-w-[900px] w-full">
+            <div >
+                <table id="selection-table" class="min-w-[400px] w-full">
                     <thead>
                         <tr>
                             <th>
@@ -189,7 +191,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th class="hidden md:table-cell">
+                            <th>
                                 <span class="flex items-center">
                                     Tanggal Lahir
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -205,7 +207,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th class="hidden md:table-cell">
+                            <th>
                                 <span class="flex items-center">
                                     Nilai Total
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -246,7 +248,7 @@
                             <td class="px-4 py-3">{{ $baby->nama_ayah }}</td>
                             <td class="px-4 py-3">{{ $baby->alamat_lengkap }}</td>
                             <td class="px-4 py-3 hidden md:table-cell">{{ $baby->tanggal_lahir }}</td>
-                            <td class="px-4 py-3 hidden md:table-cell">{{ $baby->tanggal_mengisi }}</td>
+                            <td class="px-4 py-3 hide-400">{{ $baby->tanggal_mengisi }}</td>
                             <td class="px-4 py-3">{{ $baby->nilai_total }}</td>
                             <td class="px-4 py-3">
                                 @if($baby->status == 'Normal')
@@ -280,6 +282,13 @@
                 </table>
             </div>
         </div>
+        <style>
+        @media (max-width: 400px) {
+            .hide-400 {
+                display: none !important;
+            }
+        }
+        </style>
 
         <!-- Modal Tambah Bayi -->
         <div id="addBabyModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden overflow-y-auto" onclick="closeModal(event)">
