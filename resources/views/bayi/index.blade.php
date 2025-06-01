@@ -153,8 +153,8 @@
 
 
             <!-- Baby Data Table -->
-            <div>
-                <table id="selection-table">
+            <div class="overflow-x-auto w-full">
+                <table id="selection-table " class="min-w-[900px] w-full">
                     <thead>
                         <tr>
                             <th>
@@ -189,7 +189,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th>
+                            <th class="hidden md:table-cell">
                                 <span class="flex items-center">
                                     Tanggal Lahir
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -197,7 +197,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th>
+                            <th class="hidden md:table-cell">
                                 <span class="flex items-center">
                                     Tanggal Mengisi
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -205,7 +205,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th>
+                            <th class="hidden md:table-cell">
                                 <span class="flex items-center">
                                     Nilai Total
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -229,7 +229,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th>
+                            <th class="hidden md:table-cell">
                                 <span class="flex items-center">
                                     Aksi
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -245,8 +245,8 @@
                             <td class="px-4 py-3">{{ $baby->nama_ibu }}</td>
                             <td class="px-4 py-3">{{ $baby->nama_ayah }}</td>
                             <td class="px-4 py-3">{{ $baby->alamat_lengkap }}</td>
-                            <td class="px-4 py-3">{{ $baby->tanggal_lahir }}</td>
-                            <td class="px-4 py-3">{{ $baby->tanggal_mengisi }}</td>
+                            <td class="px-4 py-3 hidden md:table-cell">{{ $baby->tanggal_lahir }}</td>
+                            <td class="px-4 py-3 hidden md:table-cell">{{ $baby->tanggal_mengisi }}</td>
                             <td class="px-4 py-3">{{ $baby->nilai_total }}</td>
                             <td class="px-4 py-3">
                                 @if($baby->status == 'Normal')
@@ -266,7 +266,7 @@
                                 <span class="text-red-700">Rujuk ke RS Tumbuh Kembang (Level 1).</span>
                                 @endif
                             </td>
-                            <td class="px-4 py-3">
+                            <td class="px-4 py-3 hidden md:table-cell">
                                 <form method="POST" action="{{ route('bayi.destroy', $baby->id) }}" class="flex items-center gap-2">
                                     @csrf
                                     @method('DELETE')
