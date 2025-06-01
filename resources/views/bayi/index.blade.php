@@ -2,6 +2,11 @@
 <html>
 
 <head>
+    <meta property="og:title" content="M-CHAT Universitas Nurul Jadid">
+    <meta property="og:description" content="Deteksi Autisme Dini Bayi - Universitas Nurul Jadid">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Logo-UNUJA.png/500px-Logo-UNUJA.png">
+    <meta property="og:url" content="https://mchartbidanangkatan23.com">
+    <meta property="og:type" content="website">
     <title>Modified Checklist for Autism in Toddlers Universitas Nurul Jadid</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
