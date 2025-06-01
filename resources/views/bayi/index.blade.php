@@ -199,7 +199,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th class="hidden md:table-cell">
+                            <th class="flex items-center">
                                 <span class="flex items-center">
                                     Tanggal Mengisi
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -247,8 +247,8 @@
                             <td class="px-4 py-3">{{ $baby->nama_ibu }}</td>
                             <td class="px-4 py-3">{{ $baby->nama_ayah }}</td>
                             <td class="px-4 py-3">{{ $baby->alamat_lengkap }}</td>
-                            <td class="px-4 py-3 hidden md:table-cell">{{ $baby->tanggal_lahir }}</td>
-                            <td class="px-4 py-3 hide-400">{{ $baby->tanggal_mengisi }}</td>
+                            <td class="px-4 py-3">{{ $baby->tanggal_lahir }}</td>
+                            <td class="px-4 py-3">{{ $baby->tanggal_mengisi }}</td>
                             <td class="px-4 py-3">{{ $baby->nilai_total }}</td>
                             <td class="px-4 py-3">
                                 @if($baby->status == 'Normal')
