@@ -597,26 +597,26 @@
     <!-- Lokasi Section -->
     <section id="maps" class="container mx-auto my-16 px-4">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Team</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
             <div class="group bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover: hover:shadow-2xl duration-300">
                 <div class="overflow-hidden">
-                    <img src="{{ asset('storage/gambar/1.jpg') }}"
-                        alt="Robert Brown"
-                        class="w-full h-72 object-cover transition-transform duration-300 transform group-hover:scale-110">
-                </div>
-                <div class="p-6 bg-gray-900 group-hover:bg-blue-950 transition-colors duration-300">
-                    <h3 class="text-xl font-bold text-white">Anis Latifatul Jamilah</h3>
-                    <p class="text-gray-400">Ketua Tim</p>
-                </div>
-            </div>
-            <div class="group bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover: hover:shadow-2xl duration-300">
-                <div class="overflow-hidden">
-                   <img src="{{ asset('storage/gambar/3.jpg') }}"
+                    <img src="{{ asset('storage/gambar/3.jpg') }}"
                         alt="Robert Brown"
                         class="w-full h-72 object-cover transition-transform duration-300 transform group-hover:scale-110">
                 </div>
                 <div class="p-6 bg-gray-900 group-hover:bg-blue-950 transition-colors duration-300">
                     <h3 class="text-xl font-bold text-white">Maryama Habibillah</h3>
+                    <p class="text-gray-400">Ketua Tim</p>
+                </div>
+            </div>
+            <div class="group bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover: hover:shadow-2xl duration-300">
+                <div class="overflow-hidden">
+                    <img src="{{ asset('storage/gambar/1.jpg') }}"
+                    alt="Robert Brown"
+                    class="w-full h-72 object-cover transition-transform duration-300 transform group-hover:scale-110">
+                </div>
+                <div class="p-6 bg-gray-900 group-hover:bg-blue-950 transition-colors duration-300">
+                    <h3 class="text-xl font-bold text-white">Anis Latifatul Jamilah</h3>
                     <p class="text-gray-400">Anggota</p>
                 </div>
             </div>
@@ -650,6 +650,17 @@
                 </div>
                 <div class="p-6 bg-gray-900 group-hover:bg-blue-950 transition-colors duration-300">
                     <h3 class="text-xl font-bold text-white">Ayu Zuhriyatin</h3>
+                    <p class="text-gray-400">Anggota</p>
+                </div>
+            </div>
+            <div class="group bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover: hover:shadow-2xl duration-300">
+                <div class="overflow-hidden">
+                    <img src="{{ asset('storage/gambar/6.png') }}"
+                        alt="Robert Brown"
+                        class="w-full h-72 object-cover transition-transform duration-300 transform group-hover:scale-110">
+                </div>
+                <div class="p-6 bg-gray-900 group-hover:bg-blue-950 transition-colors duration-300">
+                    <h3 class="text-xl font-bold text-white">Delatul Ummah</h3>
                     <p class="text-gray-400">Anggota</p>
                 </div>
             </div>
